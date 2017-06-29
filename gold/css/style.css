@@ -222,7 +222,7 @@
 	.about-img img, .about-link{
 		display: inline-block;
 		width: 177px;
-		height: 177px;
+		height: 145px;
 		border: 7px solid #f1f1f1;
 
 		-webkit-border-radius:50%;
