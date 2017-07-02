@@ -2,7 +2,7 @@
   // slider
   $(document).ready(function(){
     $('.slide').slick({
-     autoplay: false,
+     autoplay: true,
      slidesToShow: 3,
      speed: 400,
      dots:false,
