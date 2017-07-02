@@ -232,6 +232,13 @@ font-size: 17px;
   width: 100%;
   overflow: hidden;
 }
+@media (max-width: 600px){
+	.conten_img img{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+ }
+}
 .about_txt_wrapp{
 	width: 50%;
 	padding-top: 60px;
