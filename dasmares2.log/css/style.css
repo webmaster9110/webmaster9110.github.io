@@ -1,0 +1,212 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border:0;
+	font-size: 100%;
+	font:inherit;
+	vertical-align: baseline;
+}
+
+
+html{height: 100%;}
+body{
+	height: 100%;
+	font-family: 'RobotoSlabRegular_0';
+	font-size: 14px;
+	color: #000;
+}
+@font-face{
+	font-family: 'ArvoBold';
+	src: url('../fonts/ArvoBold.eot');
+    src: url('../fonts/ArvoBold.eot?#iefix') format("embedded-opentype"),
+         url('../fonts/ArvoBold.woff') format("woff"),
+         url('../fonts/ArvoBold.ttf') format("truetype"),
+         url('../fonts/ArvoBold.svg#JournalRegular') format("svg");
+}
+@font-face{
+	font-family: 'OpenSans-Light';
+	src: url('../fonts/RobotoSlabRegular_0.ttf');
+}
+@font-face{
+	font-family: 'OpenSans-Light';
+	src: url('../fonts/RobotoSlabLight_0.ttf');
+}
+@font-face{
+	font-family: 'OpenSans-Light';
+	src: url('../fonts/RobotoSlabBold_0.ttf');
+
+}
+ol,ul{list-style: none;}
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+
+}
+
+a, a:hover{color: #000; text-decoration:  none;}
+
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+}
+
+.clearfix:after{clear: both;}
+
+.left{float: left;}
+.right{float: right;}
+.text-right{text-align: right;}
+
+
+.nav-wrapp{
+	position: absolute;
+	top: 10px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+@media screen and (max-width: 800px){
+	.nav-wrapp{
+	display: block;
+}
+}
+.nav-bloks{
+	height: 100%;
+}
+.navbar{
+	height: 100%;
+	min-height: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgba(1, 102, 194, 0.4);
+	border-color: transparent;
+	z-index: 1000;
+}
+
+.navbar-nav li{
+	padding-top: 15px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.navbar-nav a{
+	font-size: 20px;
+	padding: 0!important;
+	text-transform: uppercase;
+}
+.navbar-nav a:hover{
+	border-bottom: 2px solid #ff9500;
+}
+.carousel{
+	top: -92px;
+}
+@media screen and (max-width: 991px){
+	.navbar-nav a{
+	font-size: 14px;
+}
+}
+.carousel-caption{
+	position: relative;
+	top: 40%;
+	color: #fae31b;
+}
+.title-slide{
+	font-family: 'ArvoBold';
+	font-size: 60px;
+	color: #fae31b;
+}
+.glyphicon-chevron-right{
+	background-image: 
+}
+.section-title{
+	margin-bottom: 60px;
+	font-size: 32px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #04b9d4;
+}
+.intrest{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+.txt{
+	margin-bottom: 20px;
+}
+.blok-img{
+	margin-top: 40px;
+	width: 100%;
+	z-index: 1000;
+}
+.blok-img img{
+	width: 100%;
+	overflow: hidden;
+}
+.title-img{
+	font-size: 20px;
+	margin-top: 40px;
+	padding-bottom: 30px; 
+	display: inline-block;
+	color: #000;
+}
+.title-img:hover{
+	text-decoration: none;
+}
+.fa-angle-right{
+	padding-left: 20px;
+	color: #04b9d4;
+}
+.more-btn{
+	margin-top: 40px;
+	font-size: 18px;
+	background: none;
+	border:none;
+	text-transform: uppercase;
+	color: #04b9d4;
+}
+
+footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #0050a6;
+}
+.licency-bl{
+	padding-top: 20px;
+	color: #fff;
+}
+.foot-soc{
+
+}
+.foot-soc a{
+	padding-left: 20px;
+	color: #fff;
+	font-size: 30px;
+}
+.foot-soc a:hover{
+	color: #ffeb3b;
+}
+@media screen and (max-width: 748px){
+	footer{
+		text-align: center;
+	}
+}
