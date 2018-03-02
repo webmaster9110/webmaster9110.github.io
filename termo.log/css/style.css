@@ -127,7 +127,8 @@ a, a:hover{color: #000; text-decoration:  none!important;}
 }
 /*nav*/
 .navbar-nav i{
-	position: absolute;
+	position: relative;
+	bottom: 1px;
 	margin-left: 3px;
 
 }
