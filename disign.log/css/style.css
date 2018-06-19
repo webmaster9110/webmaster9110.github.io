@@ -731,6 +731,8 @@ header{
 }
 .service-list__item {
 	padding: 15px 15px;
+    width: 30%;
+    margin: 0 auto;
 }
 .service-list__item:hover {
 	background-color: #f0f0f0;
@@ -1914,6 +1916,7 @@ header{
 		display: block;
 	}
 	.service-list__item, .box-pricing .service-list__item {
+		width: 100%;
 		margin: 0 auto 40px;
 		max-width: 420px;
 	}
