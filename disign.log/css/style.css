@@ -566,9 +566,8 @@ header{
 	
 }
 .team-list__item:hover .team-list__img img{
-		width: 210px;
-		height: 210px;
-		transition: .5s;
+		transform: scale(1.2);
+		transition: all 0.3s ease-in-out;
 		border: none;
 }
 .team-list__item:hover .team-list__img:after{
