@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8 " />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Test</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<header>
+	<div class="wrapper">
+		<div class="header__wrap">
+			<nav class="navigation">
+					<button class="menu-btn">
+							<span></span>
+						</button>
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#" class="menu__link">Личная информация </a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Опыт </a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">JavaScript</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">О себе</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+	</div>
+</header>
+<section class="title">
+	<div class="title-bg"></div>
+	<h2 class="title-txt">Анкета</h2>
+</section>
+<!-- block-info -->
+<section class="block-info">
+	<div class="wrapper">
+		<div class="img">
+			<img src="img/icon4.png" alt="Письма мастера дзен">
+		</div>
+			
+		<h3 class="title-block">Личная информация</h3>
+		<form>
+			<div class="bloc-info__ipt">
+				<input type="text" placeholder="ФИО">
+				<div class="select-wrapper">
+					<select>
+						<option>Москва</option>
+						<option>Сочи</option>
+						<option>Минск</option>
+					</select>
+					<div class="select-arrow"></div>
+					<div class="select-arrow"></div>
+				</div>
+				<input type="text" placeholder="Место проживания">
+				<input type="text" placeholder="Skype">
+				<input type="text" placeholder="E-mail">
+			</div>
+		</form>
+	</div>
+</section>
+<!-- skils -->
+<section class="block-skils">
+	<div class="wrapper">
+			<div class="img">
+					<img src="img/3.png" alt="Письма мастера дзен">
+			</div>
+		<h3 class="title-block">Расскажите о своем опыте</h3>
+		<div class="radio-skils">
+			<div class="radio-skils__ithem">
+				<input type="checkbox" id="1" name="1" />
+				<label for="1">БЭМ/OOCSS</label>
+			</div>
+			<div class="radio-skils__ithem" checked>
+				<input type="checkbox" id="2" name="2"  checked/>
+				<label for="2">Stylus/LESS/SASS</label>
+			</div>
+			<div class="radio-skils__ithem">
+				<input type="checkbox" id="3" name="3" />
+				<label for="3">Работаю с SVG</label>
+			</div>
+			<div class="radio-skils__ithem">
+				<input type="checkbox" id="4" name="4" />
+				<label for="4">Верстаю семантично</label>
+			</div>
+			<div class="radio-skils__ithem">
+				<input type="checkbox" id="5" name="5" />
+				<label for="5">ES2015/ES2016</label>
+			</div>
+			<div class="radio-skils__ithem">
+				<input type="checkbox" id="6" name="6" />
+				<label for="6">Gulp/GRUNT</label>
+			</div>
+			<div class="radio-skils__ithem">
+				<input type="checkbox" id="7" name="7" />
+				<label for="7">Webpack</label>
+			</div>
+			<div class="radio-skils__ithem">
+				<input type="checkbox" id="8" name="8" />
+				<label for="8">jQuery</label>
+			</div>
+			<div class="radio-skils__ithem">
+				<input type="checkbox" id="9" name="9" />
+				<label for="9">Ипользую Git</label>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+
+<section class="level-js">
+	<div class="wrapper">
+		<div class="img">
+				<img src="img/icon2.png" alt="Письма мастера дзен">
+		</div>
+			
+		<h3 class="title-block">Уровень владения JavaScript</h3>
+		<div class="level-js__txt">
+
+			<div class="txt-ithem">Не владею</div>
+
+			<div class="txt-ithem">Использую готовые решения</div>
+
+			<div class="txt-ithem">Использую готовые решения и умею и переделывать</div>
+
+			<div class="txt-ithem">Пишу сложный JS с нуля</div>
+		</div>
+		<div>
+			<div class="barre" data-length="30"></div>
+			<input id="selector" class="range" type="range" max="100" step="10" value="70" />
+		</div>
+
+	</div>
+
+</section>
+
+<section class="about">
+	<div class="wrapper">
+		<div class="img">
+				<img src="img/icon1.png" alt="Письма мастера дзен">
+		</div>
+		
+		<h3 class="title-block">Расскажите о своем опыте</h3>
+		<p class="desc">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.
+	</p>
+		<div class="form-wrapp">
+			<div>
+				<textarea placeholder="Понравилась тем, что..."></textarea>
+			</div>
+			<div class="btn-wrapp">
+				<button class="btn">Готово</button>
+			</div>
+		</div>
+	</div>
+
+</section>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
