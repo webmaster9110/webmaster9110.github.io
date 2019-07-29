@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* { margin: 0; padding: 0; }
 body {
     color: #4d4d4d;
     font-family: 'Roboto', Arial, sans-serif;
@@ -6,6 +7,9 @@ body {
     line-height: 1;
 }
 a{text-decoration: none;}
+option{
+    text-align: center;
+}
 .wrapper {
     max-width: 770px;
     width: 100%;
@@ -86,6 +90,7 @@ a{text-decoration: none;}
 
 .title-block {
     margin-bottom: 60px;
+    margin-top: 70px;
     font-size: 30px;
     text-align: center;
     color: #000;
@@ -220,34 +225,48 @@ input[type=radio]:checked+label:before {
 
  
 
-  /*--------  */
+  /*-------- range */
 
   .range {
-      appearance: none;
+      -moz-appearance: none;
+           appearance: none;
     -webkit-appearance: none;
 }
+.range:focus{
+    border: none;
+}
+input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
 input[type=range]{
+    -webkit-appearance: none;
     height: 20px;
     width: 20px;
     border: 1px solid #b7b7b7;
     background: transparent;
     border-radius: 100% 0% 100% 100%;
+    -webkit-border-radius: 100% 0% 100% 100%;
+	   -moz-border-radius: 100% 0% 100% 100%;
+	     -o-border-radius: 100% 0% 100% 100%;
     border: none;
       cursor: pointer;
 }
 /* Special styling for WebKit/Blink */
 input[type=range]::-webkit-slider-thumb {
-      height: 20px;
-  width: 20px;
-  border: 1px solid #b7b7b7;
-  background: transparent;
-  border-radius: 100% 0% 100% 100%;
--moz-transform: rotate(-45deg); /* Для Firefox */
-    -ms-transform: rotate(-45deg); /* Для IE */
-    -webkit-transform: rotate(-45deg); /* Для Safari, Chrome, iOS */
-    -o-transform: rotate(-45deg); /* Для Opera */
-    transform: rotate(-45deg);
+    -webkit-appearance: none;
+    border: 1px solid #b7b7b7;
+    height: 20px;
+    width: 20px;
+    border-radius: 50% 0% 50% 50%; 
+    -webkit-border-radius: 100% 0% 100% 100%;
+       -moz-border-radius: 100% 0% 100% 100%;
+         -o-border-radius: 100% 0% 100% 100%;
+         background: transparent;
+         -webkit-transform: rotate(-45deg); 
+         transform: rotate(-45deg);
     cursor: pointer;
+
+     
   }
   
   /* All the same stuff for Firefox */
@@ -256,12 +275,12 @@ input[type=range]::-webkit-slider-thumb {
   width: 20px;
   border: 1px solid #b7b7b7;
   background: transparent;
-  border-radius: 50% 0% 50% 50%;
-  -moz-transform: rotate(-45deg); /* Для Firefox */
-    -ms-transform: rotate(-45deg); /* Для IE */
-    -webkit-transform: rotate(-45deg); /* Для Safari, Chrome, iOS */
-    -o-transform: rotate(-45deg); /* Для Opera */
-    transform: rotate(-45deg);
+  border-radius: 50% 0% 50% 50%; 
+  -webkit-border-radius: 100% 0% 100% 100%;
+     -moz-border-radius: 100% 0% 100% 100%;
+       -o-border-radius: 100% 0% 100% 100%;
+  -webkit-transform: rotate(-45deg); 
+  transform: rotate(-45deg);
     cursor: pointer;
   }
   
@@ -271,12 +290,12 @@ input[type=range]::-webkit-slider-thumb {
   width: 20px;
   border: 1px solid #b7b7b7;
   background: transparent;
-  border-radius: 100% 0% 100% 100%;
-  -moz-transform: rotate(-45deg); /* Для Firefox */
-    -ms-transform: rotate(-45deg); /* Для IE */
-    -webkit-transform: rotate(-45deg); /* Для Safari, Chrome, iOS */
-    -o-transform: rotate(-45deg); /* Для Opera */
-    transform: rotate(-45deg);
+  border-radius: 100% 0% 100% 100%; /* Для Firefox */ /* Для IE */
+  -webkit-border-radius: 100% 0% 100% 100%;
+     -moz-border-radius: 100% 0% 100% 100%;
+       -o-border-radius: 100% 0% 100% 100%;
+  -webkit-transform: rotate(-45deg); /* Для Safari, Chrome, iOS */ /* Для Opera */
+  transform: rotate(-45deg);
     cursor: pointer;
   }
 
@@ -363,8 +382,12 @@ input[type=range]::-webkit-slider-thumb {
   }
   /* skils txt */
  .level-js__txt{
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: space-between;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between;
  }
 
 .txt-ithem{
@@ -387,23 +410,37 @@ input[type=range]::-webkit-slider-thumb {
 /* about */
 .about{
     margin-top: 70px;
+    margin-bottom: 90px;
 }
 .desc{
+    width: 450px;
+    margin: 0 auto;
     text-align: center;
     font-size: 16px;
 }
 .form-wrapp{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-flex-direction: column;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 margin-top: 40px;
-justify-content: center;
-align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 textarea{
     width: 515px;
     height: 180px;
     resize: none;
+    font-size: 20px;
 }
+
 .btn-wrapp{
     margin-top: 70px;
 }
@@ -414,6 +451,7 @@ textarea{
     background-color:#435993;
     border-radius: 8px;
     color: #fff;
+    -webkit-transition: all .3s;
     transition: all .3s;
 }
 .btn:hover{
@@ -452,33 +490,41 @@ display: block;
 .menu-btn span::after {
   content: '';
   display: block;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 .menu-btn span::before {
-  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 .menu-btn span::after {
-  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .menu-btn_active{
 	background-color: #000;
 	color: #fff;
+	-webkit-transition: all .3s;
 	transition: all .3s;
 }
 .menu-btn_active span{
 	 background-color: #fff;
 }
 .menu-btn_active span:before {
-  transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
   width: 10px;
-  transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
   background-color: #fff;
 }
 .menu-btn_active span:after {
-  transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
   width: 10px;
-  transform-origin: left top;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
   background-color: #fff;
 }
 
@@ -523,6 +569,9 @@ display: block;
     }
     textarea {
         width: 300px;
+    }
+    desc{
+        width: 100%;
     }
 }
 
