@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8 " />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Disign</title>
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	<div class="wrap-calc">
+		<div class="title-calc">
+			<h3>Рассчитать стоимость золотого изделия и процент</h3>
+		</div>
+		<div class="field field-input">
+			<div class="title__filed-input">
+				<h5>Вес изделия, г.</h5>
+			</div>
+			<div class="field-body">
+
+				<input type="number" id="count" value="0" min="0" oninput="calc()" />
+
+			</div>
+		</div>
+
+		<div class="field field-input">
+			<div class="title__filed-input">
+				<h5>Проба золота</h5>
+			</div>
+		</div>
+		<div class="field-body">
+			<select onchange="calc()" id="type_design">
+				<option value="1705">585 (583)</option>
+				<option value="2190">750</option>
+				<option value="2635">850</option>
+				<option value="2905">958</option>
+			</select>
+		</div>
+
+		<div class="first-result">
+			<div>Я получу </div>
+			<div id="result">0 руб.</div>
+		</div>
+
+		<div class="calc-txt">
+			<p>*Каждый клиент ломбарда получает накопительную дисконтную карту, повышающую оценочную стоимость изделия
+			</p>
+		</div>
+		<div class="first-result second-result">
+			<div>Сумма процентов к оплате в день</div>
+			<div id="result2">0 руб.</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
