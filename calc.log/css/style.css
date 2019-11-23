@@ -47,6 +47,7 @@ transition: all .3s ease;
 }
 .field-body input:focus{
     border-bottom: 2px solid #f44336;
+    border-bottom-style: none;
 }
 .field-body select{
     background-color:#212121;
