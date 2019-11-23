@@ -32,6 +32,9 @@ padding-bottom: 18px;
 font-size: 19px;
 
 }
+.field-body input::-webkit-inner-spin-button { 
+    opacity: 1;
+  }
 .field-body input,.field-body select{
     width: 100%;
     border-radius: 0;
