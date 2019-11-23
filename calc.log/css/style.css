@@ -52,6 +52,7 @@ transition: all .3s ease;
 }
 .field-body select{
     background-color:#212121;
+    outline:none;
 }
 .first-result{
     display: -webkit-box;
