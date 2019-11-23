@@ -54,6 +54,9 @@ transition: all .3s ease;
     background-color:#212121;
     outline:none;
 }
+.field-body select:focus{
+    outline:none;
+}
 .first-result{
     display: -webkit-box;
     display: -ms-flexbox;
