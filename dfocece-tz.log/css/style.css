@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+html, body {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #222;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  background: #f1f1f1;
+}
+
+.button {
+  background: none;
+  border: 1px solid black;
+  padding: 10px 20px;
+  font-size: .9rem;
+}
+
+.button:hover {
+  background: #96020e;
+  color: #fff;
+}
+
+.button:active {
+  background: #000;
+  color: #fff;
+}
+
+.slider {
+  border: 2px solid black;
+  max-width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slider-line {
+  width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: orange;
+  position: relative;
+  left: 0;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.banner {
+  width: 100%;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+}
+
+.banner__wrapp {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: url(..//img/pexels-picjumbocom-196659.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.banner__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eee;
+  height: 500px;
+  width: 100%;
+  -webkit-clip-path: polygon(100% -69px, 21% 100%, 100% 100%);
+          clip-path: polygon(100% -69px, 21% 100%, 100% 100%);
+}
+
+.banner__txt h3 {
+  position: relative;
+  font-size: 30px;
+  word-wrap: break-word;
+  width: 25%;
+  right: -77%;
+  left: 77%;
+}
+
+.banner__txt h3:before {
+  content: '';
+  height: 10px;
+  width: 10px;
+  background: currentColor;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  left: -20px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: red;
+}
+
+.box-container {
+  max-width: 600px;
+  margin: 0  auto;
+  margin-bottom: 100px;
+  padding: 40px 0px 40px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 3px solid #eeee;
+  border-radius: 5px;
+}
+
+.box-container button {
+  width: 33%;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.box-container .btn {
+  background-color: #8D8A00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 19px;
+}
+
+.box-container .btn i {
+  padding-right: 10px;
+}
+
+.box-container .btn:hover {
+  background-color: #58571b;
+}
+
+.box-container .favorite {
+  width: 5%;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-left: 14px;
+}
+
+.box-container .favorite:hover {
+  color: red;
+}
+
+.box-container .favorite i {
+  font-size: 30px;
+}
+
+.box-container .title {
+  width: 100%;
+  margin-bottom: 50px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  font-size: 37px;
+  color: #333333;
+}
+
+.box-container .price {
+  width: 30%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  word-wrap: break-word;
+  font-size: 31px;
+  font-weight: bold;
+}
+
+.box-container .price span {
+  display: block;
+  text-decoration: line-through;
+  color: #666666;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .banner__txt {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background-color: transparent;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+  }
+  .banner__txt h3 {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    background-color: #eee;
+    padding: 20px;
+    left: 0;
+    right: 0;
+  }
+  .banner__txt h3::before {
+    display: none;
+  }
+  .box-container {
+    padding: 40px 0px 40px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .box-container .price {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .box-container button {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
